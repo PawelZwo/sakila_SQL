@@ -54,30 +54,30 @@ query_alter2 = sql.SQL("""
     ALTER TABLE {table_name} ADD COLUMN date_of_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 """).format(table_name=sql.Identifier("User"))
 
-with cnx:
-    # try:
-    #     cursor.execute(query_create_table_user)
-    # except DatabaseError as error:
-    #     print(error)
-    # try:
-    #     cursor.execute(query_insert_user, ("Janusz", "janusz@mail.com", "dworczyk"))
-    # except DatabaseError as error:
-    #     print(error)
-    # try:
-    #     cursor.execute(query_update, ("janusz@mail.com", 1))
-    # except DatabaseError as error:
-    #     print(error)
-    # try:
-    #     cursor.execute(query_delete, (1,))
-    # except DatabaseError as error:
-    #     print(error)
-    # try:
-    #     cursor.execute(query_create_table_address)
-    # except DatabaseError as error:
-    #     print(error)
-    # try:
-    #     cursor.execute(query_alter2)
-    # except DatabaseError as error:
-    #     print(error)
+# with cnx:
+#     try:
+#         cursor.execute(query_create_table_user)
+#     except DatabaseError as error:
+#         print(error)
+#     try:
+#         cursor.execute(query_insert_user, ("Janusz", "janusz@mail.com", "dworczyk"))
+#     except DatabaseError as error:
+#         print(error)
+#     try:
+#         cursor.execute(query_update, ("janusz@mail.com", 1))
+#     except DatabaseError as error:
+#         print(error)
+#     try:
+#         cursor.execute(query_delete, (1,))
+#     except DatabaseError as error:
+#         print(error)
+#     try:
+#         cursor.execute(query_create_table_address)
+#     except DatabaseError as error:
+#         print(error)
+#     try:
+#         cursor.execute(query_alter2)
+#     except DatabaseError as error:
+#         print(error)
 
 # cnx.close()
