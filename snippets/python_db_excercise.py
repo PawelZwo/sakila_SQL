@@ -1,7 +1,7 @@
 from psycopg2 import connect, OperationalError, sql, DatabaseError
 
 try:
-    cnx = connect(user="postgres", password="#QW04061993er!", host="localhost", port=5432, database="postgres")
+    cnx = connect(user="postgres", password="coderslab", host="localhost", port=5432, database="postgres")
     cursor = cnx.cursor()
     print("Connected")
 except OperationalError as error:
